@@ -15,6 +15,10 @@ Tailwind
 Docker
 
 ## Sreenshots
+![Screenshot 2024-11-22 154609](https://github.com/user-attachments/assets/4a21e5e9-80f9-4d8d-bf76-9b8219a0e08c)
+
+![Screenshot 2024-11-22 154658](https://github.com/user-attachments/assets/f8a2820f-caea-405c-97c6-da63a24c83b7)
+
 
 # Turborepo starter
 
