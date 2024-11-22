@@ -41,21 +41,33 @@ export default async function(){
      const balance=await getBalance()
      const transactions=await getOnRampTransactions()
 
-    return <div className="w-full">
-         <div className="text-4xl font-bold text-[#6a51a6] pt-8 mt-8">
-           Transfer
-         </div>
-         <div className="grid grid-cols-1 gap-4 p-4 md:grid-cols-2">
-            <div>
-                <Addmoney></Addmoney>
-            </div>
-            <div>
-                <BalanceCard amount={balance.amount} locked={balance.locked}></BalanceCard>
-                <div className="pt-4">
-                    <OnrampTransactions transactions={transactions} ></OnrampTransactions>
-                </div>
-            </div>
-         </div>
+     return (
+    <div className="w-full py-16 ">
+     
+      <div className="text-4xl font-bold text-[#6a51a6] text-center mb-8">
+        Transfer
+      </div>
 
+      <div className="grid grid-cols-1 gap-8 p-4 md:grid-cols-2">
+
+        <div className="bg-gradient-to-r from-purple-500 to-purple-700 p-6 rounded-lg shadow-lg text-center">
+          <div className="text-white text-2xl mb-4">💸 Add Money</div>
+          <Addmoney />
+        </div>
+
+      
+        <div>
+       
+          <div className="bg-gradient-to-r from-purple-500 to-purple-700 p-6 rounded-lg shadow-lg mb-4 text-center">
+            <BalanceCard amount={balance.amount} locked={balance.locked} />
+          </div>
+
+
+          <div className="bg-gradient-to-r from-purple-500 to-purple-700 p-6 rounded-lg shadow-lg text-center">
+            <OnrampTransactions transactions={transactions} />
+          </div>
+        </div>
+      </div>
     </div>
+     )
 }
