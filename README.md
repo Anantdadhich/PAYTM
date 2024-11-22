@@ -1,6 +1,6 @@
 ## Paybank
 
-It is basic payment app where we can add money and transfer money by bank webhooks or help onrampTransactions
+It is basic payment app where we can add money and transfer money by bank webhooks with help of rampTransactions
 
 ![alt text](image.png)
 
@@ -13,6 +13,8 @@ Postgres Database
 Prisma ORM
 Tailwind
 Docker
+
+## Sreenshots
 
 # Turborepo starter
 
@@ -28,7 +30,7 @@ npx create-turbo@latest
 
 ## Run Locally Clone it
 
-- git clone https://github.com/Anantdadhich/PAYTM
+- git clone https://github.com/Anantdadhich/PAYTM.git
 
 - npm install
 
